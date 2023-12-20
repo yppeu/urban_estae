@@ -25,6 +25,7 @@ nav > ul > li:not(:last-child){
 }
 .login-box > a{
     font-size: 16px;
+    font-weight: bold;
 }
 .login-box > a:first-child{
     margin-right: 27px;
@@ -36,14 +37,330 @@ nav > ul > li:not(:last-child){
 }
 
 
+
 /* main */
-.container-wrap{
-    max-width: 1200px;
+/* 공통 */
+.content-wrap{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/* section1 */
+.main-banner{
+    margin: 0 auto;
+}
+.m-banner-img-box > img{
+    width: 100%;
+}
+.section1{
+    margin: 0 40px;
+    position: relative;
+}
+.m-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.m-text-box > h1{
+    font-size: 56px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.m-text-box > p{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.banner-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.banner-nav > li{
+    font-size: 20px;
+    position: relative;
+}
+.banner-nav > li:not(:last-child){
+    margin-right: 30px;
+}
+.banner-nav > li:first-child{
+    font-weight: bold;
+}
+.banner-nav > li:first-child::after{
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    width: 52px;
+    height: 4px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.search-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 625px;
+    height: 60px;
+    border-radius: 50px;
+    padding-left: 24px;
+    box-sizing: border-box;
+}
+.search-wrap > input{
+    border: none;
+    width: 100%;
+    outline: none;
+    color: #888;
+    font-size: 18px;
+}
+.search-wrap > input::placeholder{
+    color: #888;
+    font-size: 18px;
+}
+.search-img-box{
+    background: #C82021;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin-right: 6px;
+}
+.search-img-box > img{
+    padding: 14px;
+}
+
+/* section2 */
+.section2{
+    padding: 64px 0 72px;
+}
+.section2 h2{
+    font-size: 40px;
+    color: #2B2B2B;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.what-text{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+.malibu-text{
+    color: #2B2B2B;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.homes-num-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.homes-num-wrap > li{
+    border-radius: 16px;
+    background: #F6F6F6;
+    padding: 37px 72px;
+}
+.homes-num-wrap > li:not(:last-child){
+    margin-right: 20px;
+}
+.homes-num-wrap > li > a > p:first-of-type{
+    color: #C82021;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.homes-num-wrap > li > a > p:last-of-type{
+    color: #2B2B2B;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* section3 */
+.section3{
+    padding: 0 0 80px 0;
+}
+.help-text{
+    color: #2B2B2B;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.house-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.house-wrap > li:not(:last-child){
+    margin-right: 28px;
+}
+.house-box{
+    padding: 10px 18px;
+}
+.house-box > img{
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+.house-box > p{
+    color: #565656;
+    font-size: 13px;
+    font-weight: bold;
+}
+.house-text{
+    color: #C82021 !important;
+}
+.help-card-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.help-card-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.help-card-img-box{
+    position: relative;
+    margin-bottom: 10px;
+}
+.like-logo{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+.help-card-box{
+    margin-bottom: 48px;
+}
+.help-card-box:not(:last-child){
+    margin-right: 20px;
+}
+.help-card-text-wrap > p{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+}
+.help-card-text-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.room-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.room-box:not(:last-child){
+    margin-right: 20px;
+}
+.room-box > img{
+    margin-right: 6px;
+}
+.room-box > p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 3px;
+}
+.room-box > p > span{
+    color: #565656;
+    font-size: 16px;
+}
+.address-text{
+    color: #565656;
+    font-size: 16px !important;
+    font-weight: normal !important;
+}
+.continue-text{
+    color: #2B2B2B;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* section4 */
+.section4{
+    margin-bottom: 80px;
+    border-radius: 16px;
+}
+.status-box{
+    padding: 66px 0 80px;
+    border-radius: 16px;
+    background: #C82021;
+    color: #fff;
+    margin-bottom: 72px;
+}
+.status-box > p:first-child{
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.status-box > p:last-of-type{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.status-search-box{
+    width: 625px;
+    border-radius: 50px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 18px 20px;
+}
+.status-search-box > input{
+    width: calc(100% - 122px);
+    border: none;
+    outline: none;
+    color: #888;
+    font-size: 18px;
+}
+.status-search-box > input::placeholder{
+    color: #888;
+    font-size: 18px;
+}
+.status-search-box > a{
+    width: 131px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #2B2B2B;
+    font-size: 18px;
+}
+.search-cities-box > p{
+    color: #2B2B2B;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.search-cities-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.search-cities-list > li:not(:last-child){
+    margin-right: 170px;
+}
+.search-cities-list > li > a{
+    line-height: 29px; /* 170.588% */
+    text-transform: capitalize;
+    color: #2B2B2B;
 }
 
 
 
 /* footer */
+footer{
+    margin-bottom: 46px;
+}
 .footer-img-box > img{
     width: 100%;
 }
