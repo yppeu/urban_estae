@@ -392,3 +392,31 @@ footer{
     line-height: 26px; /* 173.333% */
     text-transform: capitalize;
 }
+
+
+/* ----------------------------------------
+반응형
+------------------------------------------- */
+@media screen and (max-width:1300px){
+    nav{
+        display: none;
+    }
+}
+@media screen and (max-width:1200px){
+    .m-text-box > h1{
+        font-size: 43px;
+    }
+    .m-text-box > p{
+        font-size: 20px;
+    }
+    .homes-num-wrap > li{
+        margin-bottom: 20px;
+        width: 275px;
+        height: 157px;
+        line-height: 2;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:1100px){
+
+}
