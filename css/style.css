@@ -678,6 +678,9 @@ footer{
     }
 }
 @media screen and (max-width:509px){
+    header{
+        padding: 24px 20px 22px;
+    }
     .section1{
         margin: 0 20px;
     }
@@ -703,8 +706,14 @@ footer{
     .help-text{
         font-size: 30px;
     }
+    .help-card-list{
+        justify-content: flex-start;
+    }
     .help-card-box{
         margin: 0;
+    }
+    .help-card-box:not(:last-child){
+        margin-bottom: 30px;
     }
     .footer-list-wrap{
         flex-direction: column;
@@ -717,7 +726,7 @@ footer{
     .footer-list-wrap > ul:not(:last-child){
         margin-bottom: 3px;
     }
-    /* .footer-list-wrap > ul > li:not(:first-child){
+    .footer-list-wrap > ul > li:not(:first-child){
         display: none;
-    } */
+    }
 }
