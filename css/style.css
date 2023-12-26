@@ -226,6 +226,7 @@ nav > ul > li:not(:last-child){
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 .help-card-img-box{
     position: relative;
@@ -238,9 +239,6 @@ nav > ul > li:not(:last-child){
 }
 .help-card-box{
     margin-bottom: 48px;
-}
-.help-card-box:not(:last-child){
-    margin-right: 20px;
 }
 .help-card-text-wrap > p{
     font-size: 24px;
